@@ -1,0 +1,24 @@
+{
+  "name": "@bluecateng/git-check-push",
+  "version": "1.0.0",
+  "description": "Validation for Git push hook",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bluecatengineering/commitlint-packages.git",
+    "directory": "packages/push"
+  },
+  "keywords": [
+    "git"
+  ],
+  "files": [
+    "cli.js",
+    "index.js",
+    "README.md"
+  ],
+  "bin": "cli.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "4d80d4d75885f786df2dc7f48103ec57e67aff38"
+}

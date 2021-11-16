@@ -1,0 +1,26 @@
+{
+  "name": "@bluecateng/commitlint-plugin-bluecateng",
+  "version": "1.0.0",
+  "description": "commitlint plugin for BlueCat",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bluecatengineering/commitlint-packages.git",
+    "directory": "packages/plugin"
+  },
+  "keywords": [
+    "commitlint",
+    "commitlintplugin"
+  ],
+  "files": [
+    "index.js",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "@commitlint/lint": ">=7.6.0"
+  },
+  "gitHead": "4d80d4d75885f786df2dc7f48103ec57e67aff38"
+}

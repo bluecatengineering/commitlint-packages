@@ -1,0 +1,60 @@
+{
+  "name": "commitlint-packages",
+  "description": "commitlint packages",
+  "license": "ISC",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint --ext .js .",
+    "reformat": "prettier --write \"**/*.+(js|jsx|json|less|md|yml+)\"",
+    "prepack": "npm t",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bluecatengineering/commitlint-packages.git"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@commitlint/cli": "^14.1.0",
+    "@commitlint/config-conventional": "^14.1.0",
+    "babel-jest": "^27.3.1",
+    "eslint": "^8.2.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jest": "^25.2.4",
+    "husky": "^7.0.0",
+    "jest": "^27.3.1",
+    "lerna": "^4.0.0",
+    "lint-staged": "^12.0.2",
+    "prettier": "^2.4.1"
+  },
+  "jest": {
+    "automock": true,
+    "clearMocks": true,
+    "collectCoverage": true,
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    },
+    "transformIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix --max-warnings 0 --no-ignore",
+      "prettier --write"
+    ],
+    "*.md": [
+      "prettier --write"
+    ]
+  }
+}

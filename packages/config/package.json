@@ -24,6 +24,5 @@
   },
   "peerDependencies": {
     "@commitlint/config-conventional": ">=14.1.0"
-  },
-  "gitHead": "4d80d4d75885f786df2dc7f48103ec57e67aff38"
+  }
 }

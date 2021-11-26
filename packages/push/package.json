@@ -19,6 +19,5 @@
   "bin": "cli.js",
   "publishConfig": {
     "access": "public"
-  },
-  "gitHead": "4d80d4d75885f786df2dc7f48103ec57e67aff38"
+  }
 }

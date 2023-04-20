@@ -1,6 +1,6 @@
 {
   "name": "@bluecateng/commitlint-plugin-bluecateng",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "commitlint plugin for BlueCat",
   "license": "ISC",
   "repository": {

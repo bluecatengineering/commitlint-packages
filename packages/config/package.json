@@ -1,6 +1,6 @@
 {
   "name": "@bluecateng/commitlint-config-bluecateng",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "commitlint configuration for BlueCat",
   "license": "ISC",
   "repository": {
@@ -20,7 +20,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@bluecateng/commitlint-plugin-bluecateng": "^1.0.0"
+    "@bluecateng/commitlint-plugin-bluecateng": "^1.0.1"
   },
   "peerDependencies": {
     "@commitlint/config-conventional": ">=14.1.0"

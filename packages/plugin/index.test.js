@@ -9,6 +9,7 @@ describe('plugin', () => {
 	describe('subject-imperative', () => {
 		it('returns true if the subject is in imperative mood', () => {
 			expect(subjectImperative({subject: 'ADD foo'})).toEqual([true, subjectImperativeText]);
+			expect(subjectImperative({subject: 'always do foo'})).toEqual([true, subjectImperativeText]);
 			expect(subjectImperative({subject: 'Bring foo'})).toEqual([true, subjectImperativeText]);
 			expect(subjectImperative({subject: 'embed foo'})).toEqual([true, subjectImperativeText]);
 			expect(subjectImperative({subject: 'PASS foo'})).toEqual([true, subjectImperativeText]);
@@ -17,7 +18,7 @@ describe('plugin', () => {
 			expect(subjectImperative({subject: 'do not add foo'})).toEqual([true, subjectImperativeText]);
 		});
 
-		it('returns false if the subject is in imperative mood', () => {
+		it('returns false if the subject is not in imperative mood', () => {
 			expect(subjectImperative({subject: 'ADDED foo'})).toEqual([false, subjectImperativeText]);
 			expect(subjectImperative({subject: 'Bringing foo'})).toEqual([false, subjectImperativeText]);
 			expect(subjectImperative({subject: 'embedded foo'})).toEqual([false, subjectImperativeText]);

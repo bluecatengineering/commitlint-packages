@@ -1,4 +1,4 @@
-const exceptions = ['bring', 'embed', 'pass', 'process'];
+const exceptions = ['always', 'bring', 'embed', 'pass', 'process'];
 
 const wrongTense = (verb) => /(ed|ing|s)$/i.test(verb) && !exceptions.includes(verb.toLowerCase());
 

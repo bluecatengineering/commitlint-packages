@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.2](https://github.com/bluecatengineering/commitlint-packages/compare/@bluecateng/commitlint-plugin-bluecateng@1.0.1...@bluecateng/commitlint-plugin-bluecateng@1.0.2) (2026-04-07)
+
+**Note:** Version bump only for package @bluecateng/commitlint-plugin-bluecateng
+
 ## [1.0.1](https://github.com/bluecatengineering/commitlint-packages/compare/@bluecateng/commitlint-plugin-bluecateng@1.0.0...@bluecateng/commitlint-plugin-bluecateng@1.0.1) (2023-04-20)
 
 ### Bug Fixes

@@ -2,6 +2,8 @@
 
 Validation for Git push hook.
 
+Rejects pushes to the remote's default branch if the pushed commits contain merge commits.
+
 ## Usage
 
 Follow installation instructions for [husky](https://typicode.github.io/husky/#/?id=usage) and then:

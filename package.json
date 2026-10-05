@@ -9,8 +9,7 @@
     "lint": "eslint",
     "lint-ci": "eslint -f @microsoft/eslint-formatter-sarif -o build/eslint-results.sarif",
     "reformat": "prettier --write \"**/*.+(js|jsx|json|less|md|yml+)\"",
-    "prepack": "npm t",
-    "prepare": "husky"
+    "prepack": "npm t"
   },
   "repository": {
     "type": "git",
@@ -30,11 +29,10 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-jest": "^29.15.0",
     "globals": "^17.12.0",
-    "husky": "^9.1.7",
     "jest": "^30.3.0",
     "jest-junit": "^17.0.0",
+    "lefthook": "^2.1.15",
     "lerna": "^10.0.1",
-    "lint-staged": "^16.4.0",
     "prettier": "^3.8.1"
   },
   "workspaces": [
@@ -63,17 +61,9 @@
     "outputDirectory": "build"
   },
   "prettier": "@bluecateng/prettier-config",
-  "lint-staged": {
-    "*.{js,mjs}": [
-      "eslint --fix --max-warnings 0 --no-ignore",
-      "prettier --write"
-    ],
-    "*.md": [
-      "prettier --write"
-    ]
-  },
   "allowScripts": {
     "@parcel/watcher": false,
+    "lefthook@2.1.15": true,
     "nx": false,
     "unrs-resolver": false
   }

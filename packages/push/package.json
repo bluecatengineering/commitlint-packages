@@ -1,6 +1,6 @@
 {
   "name": "@bluecateng/git-check-push",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Validation for Git push hook",
   "license": "ISC",
   "repository": {

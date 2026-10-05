@@ -16,6 +16,7 @@
     "index.js",
     "README.md"
   ],
+  "main": "index.js",
   "bin": "cli.js",
   "publishConfig": {
     "access": "public"

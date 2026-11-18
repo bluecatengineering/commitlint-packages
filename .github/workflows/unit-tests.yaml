@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # tag=v7.0.1
 
       - name: Setup node
-        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # tag=v7.0.0
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # tag=v7.1.0
         with:
           node-version: 24
 
@@ -31,7 +31,7 @@ jobs:
           TZ: America/Toronto
 
       - name: Publish test report
-        uses: mikepenz/action-junit-report@b7b80d7ac5b1da46d6aaff9fb57ad50d8453bcb3 # tag=v6.6.0
+        uses: mikepenz/action-junit-report@a16be3a69023e9bd7e748ede768b3282ea7b30ce # tag=v6.7.1
         if: always()
         with:
           report_paths: build/junit.xml
